@@ -138,11 +138,6 @@ public class InventoryService implements Service {
     }
 
     @Override
-    public KeyValue<String, OrderValidation> punctuate(long timestamp) {
-      return null;
-    }
-
-    @Override
     public void close() {
     }
   }

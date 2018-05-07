@@ -175,12 +175,6 @@ public class EventDeduplicationLambdaIntegrationTest {
     }
 
     @Override
-    public KeyValue<K, V> punctuate(final long timestamp) {
-      // our windowStore segments are closed automatically
-      return null;
-    }
-
-    @Override
     public void close() {
       // Note: The store should NOT be closed manually here via `eventIdStore.close()`!
       // The Kafka Streams API will automatically close stores when necessary.

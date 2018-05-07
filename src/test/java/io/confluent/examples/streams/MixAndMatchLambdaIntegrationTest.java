@@ -112,12 +112,6 @@ public class MixAndMatchLambdaIntegrationTest {
     }
 
     @Override
-    public KeyValue<byte[], String> punctuate(long timestamp) {
-      // We don't need any periodic actions in this transformer.  Returning null achieves that.
-      return null;
-    }
-
-    @Override
     public void close() {
       // Not needed.
     }

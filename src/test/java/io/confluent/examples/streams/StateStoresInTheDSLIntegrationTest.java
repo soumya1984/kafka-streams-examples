@@ -107,12 +107,6 @@ public class StateStoresInTheDSLIntegrationTest {
         }
 
         @Override
-        public KeyValue<String, Long> punctuate(long timestamp) {
-          // Not needed
-          return null;
-        }
-
-        @Override
         public void close() {
           // Note: The store should NOT be closed manually here via `stateStore.close()`!
           // The Kafka Streams API will automatically close stores when necessary.
